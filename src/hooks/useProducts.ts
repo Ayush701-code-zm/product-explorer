@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Product, ProductsResponse, ApiError } from '../types';
 
-const API_BASE = 'http://localhost:3001/api';
+// Use environment variable for API URL, fallback to direct DummyJSON API for production
+const API_BASE = import.meta.env.VITE_API_URL || 
+  (import.meta.env.PROD ? 'https://dummyjson.com' : 'http://localhost:3001/api');
 
 export const useProducts = (limit: number = 12, skip: number = 0, category?: string, searchQuery?: string) => {
   const [data, setData] = useState<ProductsResponse | null>(null);

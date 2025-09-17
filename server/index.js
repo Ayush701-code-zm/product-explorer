@@ -12,7 +12,12 @@ const CACHE_DURATION = 5 * 60 * 1000;
 app.use(helmet());
 app.use(compression());
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:5174', 
+    'http://localhost:3000',
+    'https://product-explorer-six.vercel.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
