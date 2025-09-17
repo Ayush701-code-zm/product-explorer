@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://github.com"
+              href="https://github.com/Ayush701-code-zm/product-explorer.git"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors"
