@@ -111,7 +111,6 @@ npm run dev
 npm run build
 ```
 
-## 🏗 Project Structure
 
 ```
 src/
@@ -137,26 +136,12 @@ server/
 └── package.json       # Server dependencies
 ```
 
-## 🎨 Design Decisions
 
-### Animation Strategy
-- **Framer Motion**: Chosen for React integration and powerful animation primitives
-- **Staggered Animations**: Creates engaging entrance effects for product lists
-- **Spring Physics**: Provides natural, responsive feel to interactions
-- **Reduced Motion**: Respects user accessibility preferences
-
-### State Management
-- **Zustand**: Lightweight alternative to Redux with TypeScript support
-- **Local State**: Component-level state for UI-specific data
-- **Custom Hooks**: Encapsulated data fetching logic with error handling
-
-### Performance Optimizations
 - **Image Lazy Loading**: Products load images as they come into view
 - **Memoized Calculations**: Expensive filtering and sorting operations cached
 - **Backend Caching**: 5-minute cache for frequently requested data
 - **Compression**: Gzip compression on backend responses
 
-### Responsive Design
 - **Mobile-First**: Designed for mobile devices first, enhanced for larger screens
 - **Breakpoint Strategy**: 
   - Mobile: 1 column
@@ -175,19 +160,6 @@ The backend proxy provides these endpoints:
 - `GET /health` - Health check and cache status
 - `POST /api/cache/clear` - Clear cache (development)
 
-## 🚀 Deployment
-
-### Frontend (Vercel/Netlify)
-```bash
-npm run build
-# Upload dist/ folder to your preferred hosting service
-```
-
-### Backend (Heroku/Railway)
-```bash
-cd server
-# Follow your hosting provider's Node.js deployment guide
-```
 
 ## 🎯 Performance Metrics
 
@@ -230,13 +202,6 @@ cd server
 - **API Errors**: User-friendly error messages
 - **Loading States**: Skeleton loaders prevent layout shift
 - **Empty States**: Helpful messaging for no results
-
-## 🔧 Development Tools
-
-- **TypeScript**: Full type safety throughout the application
-- **ESLint**: Code quality and consistency
-- **Prettier**: Automatic code formatting
-- **Hot Reload**: Fast development iteration
 
 ## 📝 Notes
 
